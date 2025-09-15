@@ -52,7 +52,7 @@ y_prob = model.predict(X_test)
 y_pred = y_prob.argmax(axis=1)
 
 acc = accuracy_score(y_test, y_pred)
-print("✅ Test Accuracy:", round(float(acc)*100, 2), "%")
+print("Test Accuracy:", round(float(acc)*100, 2), "%")
 
 
 plt.figure(figsize=(12,5))
@@ -88,3 +88,4 @@ for i in range(25):
 plt.savefig("cnn_results.png")
 plt.tight_layout()
 plt.show()
+
